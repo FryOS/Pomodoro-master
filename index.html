@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+    <h3>Pomodorro</h3>
+    <p>Добавьте свои задачи</p>
+    <!--<div class="col s12">-->
+      <!--<button id="ask">Ask</button>-->
+      <!--<button id="single">Single</button>-->
+      <!--<button id="repeat">Repeat</button>-->
+      <!--<button id="close">Close</button>-->
+    <!--</div>-->
+    <p id="timer"></p>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <input id="name" placeholder="Enter task name" type="text" class="validate">
+      <button class="waves-effect waves-light btn" id="add">Add</button>
+      <form action="#">
+        <ul class="collection">
+          <!--<li class="collection-item" draggable="true">1 item<a href="#" class="remove-task secondary-content">
+          <i class="material-icons right red-text playTask" data-task-id="${nextID++}">play_arrow</i>
+          </a></li>-->
+        </ul>
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="js/lib/lib.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

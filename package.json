@@ -1,0 +1,27 @@
+{
+  "name": "testingdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start -s -f \".\" --ignore \"./server\" -o",
+    "autotest": "karma start karma.conf.js",
+    "test": "karma start karma.conf.js --single-run",
+    "update-webdriver": "webdriver-manager update",
+    "pree2e": "npm run update-webdriver",
+    "e2e": "protractor protractor.conf.js",
+    "doc": "jsdoc -c jsdoc.conf.json",
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-core": "^2.8.0",
+    "jsdoc": "^3.5.5",
+    "karma": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.1.1",
+    "protractor": "^5.2.2",
+    "restify": "^6.3.4"
+  }
+}

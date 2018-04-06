@@ -1,0 +1,14 @@
+.collection-item {
+}
+.collection-item::before, .collection-item::after {
+    pointer-events: none;
+}
+.drop-before {
+    border-top: 1px solid red !important;
+}
+.drop-after {
+    border-bottom: 1px solid red !important;
+}
+.drag * {
+    pointer-events: none;
+}
