@@ -141,9 +141,7 @@
         <input id="${idLi++}" type="checkbox">      
         <label class="chekbox" for="${forlabel++}"><span>${task.name}</span></label>           
         <a href="#" class="remove-task secondary-content">        
-        <i class="material-icons right red-text playTask" data-task-id="${task.id}">
-			play-arrow 
-		</i>
+        <i class="material-icons right red-text playTask" data-task-id="${task.id}">play-arrow</i>
         </a>
         `;
 		collection.appendChild(taskElement);
